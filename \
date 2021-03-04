@@ -1,0 +1,10 @@
+.PHONY: clean all
+CC=gcc
+CFLAGS=-Wall -g
+BIN=tmp1
+tmp1: tmp1.o
+	$(CC) $(CFLAGS) -o tmp1 tmp1.o
+clean:
+	rm -f *.o
+
+
